@@ -1,0 +1,54 @@
+.profile__naam {
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+
+.profile__pic {
+  border: .1rem rgba(255, 255, 255, 0) solid;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  padding: 2rem;
+}
+
+.profile__card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.profilesgrid a {
+  color: var(--darkgrey);
+  text-decoration: none;
+}
+
+.profilesgrid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.profile__card:hover {
+  background-color: var(--hover);
+}
+
+.alpaca {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}

@@ -1,0 +1,101 @@
+.home__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.home__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.artikel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 25rem;
+  margin-bottom: -.6rem;
+}
+
+.homeimg {
+  width: 49.5vw;
+  min-height: 25rem;
+  object-fit: fill;
+}
+
+.textsection {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 5rem 12rem;
+  line-height: 2rem;
+}
+
+.paginatitelgroot {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/*------------------------------------------*/
+
+.dek {
+  background-color: var(--lightgreen);
+}
+
+.white {
+  background-color: white;
+}
+
+.show {
+  background-color: var(--background);
+}
+
+/*------------------------------------------*/
+
+.section__container__instagallery {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin: 15rem 0;
+  background-color: white;
+}
+
+.container__instagallery {
+  background-color: var(--solight);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.instaimg {
+  max-width: 30rem;
+  max-height: 30rem;
+  object-fit: cover;
+}
+
+.home__plant {
+  left: -2%;
+  position: absolute;
+  z-index: -1;
+}
+
+.plantlinks {
+  margin-top: -8rem;
+  max-height: 30rem;
+}
+
+.plantrechts {
+  max-height: 40rem;
+  right: 0;
+  left: 88%;
+  z-index: 1;
+}

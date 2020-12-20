@@ -1,0 +1,140 @@
+
+.dealpaca__nav {
+  display: flex;
+  flex-flow: row nowrap;
+  min-width: 100%;
+  background-color: var(--lightgreen);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: -.8rem;
+}
+
+.dealpaca__navbar__items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.dealpaca__items__item a {
+  display: block;
+  color: var(--darkgrey);
+  text-align: center;
+  padding: 3.4rem 1.6rem;
+  text-decoration: none;
+  transition: .4s;
+  font-weight: 800;
+}
+
+.dealpaca__items__item a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------*/
+
+.dealpaca__grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  min-height: 60rem;
+  margin: 5rem 0;
+}
+
+.dealpaca__artikel {
+  max-width: 51rem;
+  margin: 10rem 0;
+}
+
+.game {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  padding: 10rem;
+  background-color: var(--lightgreen);
+}
+
+.drie {
+  background-color: var(--bubblegrey);
+}
+
+/*------------------------------*/
+
+.infoimg {
+  max-height: 50rem;
+}
+
+/*--------------------------------------*/
+
+.dealpaca__gamebtns {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  margin: -7rem 0 0;
+}
+
+.gametekst {
+  margin-top: 3rem;
+}
+
+.dealpaca__gamebtn {
+  border: .2rem solid var(--darkgrey);
+  padding: 2rem 6rem;
+  font-weight: 800;
+  margin-left: -.2rem;
+  transition: .4s;
+}
+
+.dealpaca__gamebtn:hover {
+  background-color: var(--darkgrey);
+  color: white;
+}
+
+/*--------------------------------------*/
+
+.een {
+  border: .2rem solid var(--darkgrey);
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  margin-top: 0;
+  border-top: var(--lightgreen);
+}
+
+.vier {
+  border: .2rem solid var(--darkgrey);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: -5rem;
+  border-bottom: var(--lightgreen);
+}
+
+.last {
+  width: 100%;
+  margin: 0;
+  justify-items: flex-end;
+}
+
+.lastimg {
+  height: 120%;
+}
+
+.dealpaca__gameresult {
+  margin-top: 4rem;
+}
