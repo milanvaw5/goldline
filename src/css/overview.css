@@ -52,3 +52,23 @@
   align-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 1000px) {
+
+  .profile__pic {
+    border: .1rem rgba(255, 255, 255, 0) solid;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    padding: 2rem;
+  }
+
+  .dekhengstentopimg {
+    display: none;
+  }
+
+  .dekhengstentoptext {
+    width: 100%;
+  }
+}

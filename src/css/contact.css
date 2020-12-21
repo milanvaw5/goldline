@@ -35,3 +35,18 @@
   position: absolute;
   z-index: -1;
 }
+
+@media only screen and (max-width: 1200px) {
+
+  .gegevensgrid {
+    max-width: 70%;
+  }
+
+  .gegevensuitleg {
+    max-width: 70%;
+  }
+
+  .contactimg {
+    max-height: 30rem;
+  }
+}

@@ -1,8 +1,10 @@
 <section class="home__grid show">
       <article class="artikel headerpiece">
         <h2 class="hidden">Dekhengsten pagina</h2>
-        <section><img class="homeimg" src="assets/img/home3.jpg" alt="dekhengsten"></section>
-        <section class="textsection"><h3 class="paginatitelgroot">Dekhengsten</h3>
+        <section class="dekhengstentopimg">
+          <img class="homeimg" src="assets/img/home3.jpg" alt="dekhengsten">
+        </section>
+        <section class="textsection dekhengstentoptext"><h3 class="paginatitelgroot">Dekhengsten</h3>
         <p>Hieronder kan je zien welke dekhengsten we ter beschikking stellen. U kan op de foto klikken en zo meer informatie van de hengst terug vinden. Indien u interesse heeft mag u ons vrijblijvend contacteren.
         </p>
         <button class="button"><a href="index.php?page=contact">Contacteer voor interesse</a></button>

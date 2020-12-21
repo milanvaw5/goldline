@@ -220,15 +220,64 @@ main {
   align-content: center;
   width: 100%;
   min-height: 20rem;
-  margin-top: 10rem;
+  margin: 10rem 1rem 0;
   padding: 0 30rem;
 }
 
 .footer__tekst {
   color: white;
   max-width: 15rem;
+  margin: 1rem;
 }
 
 .footer__logo {
   max-width: 10rem;
+}
+
+/*----------------------------------------
+------------------------------------------*/
+
+@media only screen and (max-width: 900px) {
+
+  .items__item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2.4rem 1.4rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    max-width: 8rem;
+    margin: -1.7rem;
+    padding-right: 2rem;
+  }
+
+  .instaicon {
+    max-width: 1.2rem;
+  }
+
+  .navbar__items {
+    width: 100%;
+  }
+
+  .footer__tekst {
+    font-size: 1.4rem;
+  }
+
+  .footer__elements {
+    background-color: var(--darkgrey);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+    min-height: 20rem;
+    margin: 10rem 1rem 0;
+    padding: 0 5rem;
+  }
+
 }

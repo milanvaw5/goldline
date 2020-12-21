@@ -1,9 +1,11 @@
 <section class="home__grid">
       <article class="artikel headerpiece">
         <h2 class="hidden">Home pagina</h2>
-        <section><img class="homeimg" src="assets/img/home.jpg" alt="alpacas in de wei"></section>
-        <section class="textsection">
-        <h3 class="paginatitelgroot">Onze Welkom op onze boerderij</h3>
+        <section class="firsthomeimg">
+          <img class="homeimg" src="assets/img/home.jpg" alt="alpacas in de wei">
+        </section>
+        <section class="textsection firsthometextsection">
+        <h3 class="paginatitelgroot">Welkom op onze boerderij</h3>
           <p>Gold-Line Alpaca’s is gelegen in de Vlaamse Ardennen vlakbij de Paterberg. We zijn nu al enkele jaren opgestart met het fokken van onze eigen dieren. Ik, Stijn ben opgegroeid op de boerderij van mijn ouders namelijk Top-Line Alpaca’s en heb hierdoor al van kleins af ervaring in de alpacawereld opgebouwd. We werken nog altijd nauw samen. Zij zijn al decennia lang aan het fokken van hoogwaardige kwaliteit, en nemen al jaren deel aan alpacashows.
           </p></br></br>
           <p>De komende jaren zal onze site aangevuld worden met meer informatie maar neem alvast een kijkje! Geïnteresseerd? Neem contact op en kom na het maken van een afspraak eens langs voor een bezoekje aan onze lieve dieren.

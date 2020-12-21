@@ -74,3 +74,12 @@
   grid-template-columns: 1fr;
   width: 70%;
 }
+
+@media only screen and (max-width: 1000px) {
+
+  .prod__img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+  }
+}

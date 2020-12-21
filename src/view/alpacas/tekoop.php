@@ -34,7 +34,7 @@
             <img src="assets/img/alpacas/<?PHP echo $merrie['profilepic'];?>" alt="<?PHP echo $merrie['naam'];?>" class="prod__img">
             <p class="prod__titel"><?PHP echo $merrie['naam'];?></p>
             <p class="prod__beschrijving"><?PHP echo $merrie['beschrijving'];?></p>
-            <button class="button"><a href="index.php?page=contact">Contacteer voor interesse</a></button>
+            <button class="button"><a href="index.php?page=contact">Contact opnemen</a></button>
           </div>
         <?php endforeach?>
       </article>
@@ -45,7 +45,7 @@
             <img src="assets/img/alpacas/<?PHP echo $dekhengst['profilepic'];?>" alt="<?PHP echo $dekhengst['naam'];?>" class="prod__img">
             <p class="prod__titel"><?PHP echo $dekhengst['naam'];?></p>
             <p class="prod__beschrijving"><?PHP echo $dekhengst['beschrijving'];?></p>
-            <button class="button"><a href="index.php?page=contact">Contacteer voor interesse</a></button>
+            <button class="button"><a href="index.php?page=contact">Contact opnemen</a></button>
           </div>
         <?php endforeach?>
       </article>

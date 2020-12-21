@@ -18,7 +18,8 @@
 .homeimg {
   width: 49.5vw;
   min-height: 25rem;
-  object-fit: fill;
+  height: 100%;
+  object-fit: cover;
 }
 
 .textsection {
@@ -98,4 +99,60 @@
   right: 0;
   left: 88%;
   z-index: 1;
+}
+
+/*----------------------------------------
+------------------------------------------*/
+
+@media only screen and (max-width: 1300px) {
+
+  .instaimg {
+    max-width: 20rem;
+    max-height: 20rem;
+    object-fit: cover;
+  }
+
+  .paginatitelgroot {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .firsthomeimg {
+    display: none;
+  }
+
+  .firsthometextsection {
+    width: 100%;
+  }
+
+  .headerpiece {
+    background-color: var(--background);
+    z-index: 1;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .section__container__instagallery {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: 3rem 0;
+    background-color: white;
+  }
+
+  .instaimg {
+    max-width: 15rem;
+    max-height: 15rem;
+    object-fit: cover;
+  }
 }
