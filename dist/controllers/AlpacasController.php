@@ -12,74 +12,82 @@ class AlpacasController extends Controller {
   }
 
   public function index() {
-/*
-    if(!empty($_POST['action'])){
-      if($_POST['action'] === 'deleteProject') $res = $this->ProjectDAO->removeAlpacaById($_POST['alpacaID']);
-      $_SESSION["message"]["positive"] = "The alpaca has been deleted";
-    }
+    $this->set('title', 'Intro');
+  }
 
-    if(!empty($_GET['state'])) $_SESSION["message"]["positive"] = "Your project has been successfully added";
+  public function home() {
+    $this->set('title', 'Goldline Alpacas');
+  }
 
-    if(!empty($_GET['action'])){
-      if($_GET['action'] === 'filterProjects'){
+  public function merries() {
+    $merries = $this->ProjectDAO->selectAllMerries();
+    $this->set('merries',$merries);
+    $this->set('title', 'Merries');
+  }
 
-            $keyword = false;
-            if (!empty($_GET['keyword'])) {
-                $keyword = $_GET['keyword'];
-            }
-            $selectedtype = false;
-            if(!empty($_GET['selectedtype'])&& $_GET['selectedtype'] !== 'ALL'){
-              $selectedtype = $_GET['selectedtype'];
-            }
-            $selectStatus = false;
-            if (!empty($_GET['selectStatus'])) {
-                if($_GET['selectStatus']=== 'current') $selectStatus = 0;
-                else if($_GET['selectStatus']=== 'completed') $selectStatus = 1;
-                else $selectStatus = 0;
-            }
-            $projects = $this->ProjectDAO->filterProjects($keyword, $selectedtype, $selectStatus);
-          }
+  public function dekhengsten() {
+    $dekhengsten = $this->ProjectDAO->selectAllDekhengsten();
+    $this->set('dekhengsten',$dekhengsten);
+    $this->set('title', 'Dekhengsten');
+  }
 
-      }
-    else $projects = $this->ProjectDAO->selectAllCurrentProjects();
-
-    if(!empty($_POST["ID"])){
-      $result = $this->ProjectDAO->completeCommission($_POST["ID"]);
-      $_SESSION["message"]["positive"] = "Item added to list of completed commissions.";
-    }
-    if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
-
-      header('Content-Type: application/json');
-      echo json_encode($projects);
-      exit();
-    }
-*/
+  public function tekoop() {
     $merries = $this->ProjectDAO->selectAllMerries();
     $dekhengsten = $this->ProjectDAO->selectAllDekhengsten();
-    /*$alpacas = $this->ProjectDAO->selectAllAlpacas();
-    $this->set('alpacas',$alpacas);*/
-    $this->set('merries',$merries);
+    $diversen = $this->ProjectDAO->selectAllDiversen();
     $this->set('dekhengsten',$dekhengsten);
-    $this->set('title', 'Goldline Alpacas');
+    $this->set('merries',$merries);
+    $this->set('diversen',$diversen);
+    $this->set('title', 'Te Koop');
+  }
+
+  public function dealpaca() {
+    $this->set('title', 'De Alpaca');
+  }
+
+  public function contact() {
+    $this->set('title', 'Contact');
+  }
+
+  public function gallerij() {
+    $pictures = $this->ProjectDAO->selectAllPictures();
+    $this->set('pictures',$pictures);
+    $this->set('title', 'Gallerij');
+  }
+
+  public function showresultaten() {
+    $showresultaten = $this->ProjectDAO->selectAllShowresultaten();
+    $this->set('showresultaten',$showresultaten);
+    $this->set('title', 'Showresultaten');
   }
 
   public function detail() {
     if(!empty($_GET['id'])){
       $alpaca = $this->ProjectDAO->selectAlpacaById($_GET['id']);
-    }
-
-    if(empty($_GET['id'])){
-      $_SESSION['message']['negative'] = 'This project was not found :(';
+      $fotos = $this->ProjectDAO->selectAllFotosFromAlpaca($_GET['id']);
+    } else {
       header('Location:index.php');
       exit();
     }
 
-    if(!empty($_POST['action'])){
-      if($_POST['action'] === 'deleteAlpaca'){
-        $deleteAlpaca = $this->ProjectDAO->removeAlpaca($_POST);
-      }
+    $this->set('fotos',$fotos);
+    $this->set('alpaca',$alpaca);
+    $this->set('title','Details');
+  }
+
+  public function merdetail() {
+    if(!empty($_GET['id'])){
+      $alpaca = $this->ProjectDAO->getAlpacaById($_GET['id']);
     }
 
+    if(empty($_GET['id'])){
+      $_SESSION['message']['negative'] = 'Deze alpaca was niet teruggevonden, gelieve opnieuw te proberen of contact op te nemen.';
+      header('Location:index.php');
+      exit();
+    }
+
+    /*$fotos = $this->ProjectDAO->selectAllFotosFromAlpaca();
+    $this->set('fotos',$fotos);*/
     $this->set('alpaca',$alpaca);
     $this->set('title','Details');
   }

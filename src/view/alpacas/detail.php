@@ -32,7 +32,19 @@
       </article>
       <article class="alpaca__artikel">
         <h2 class="paginatitel">Showresultaten</h2>
-        <p>In afwachting...</p>
+
+        <?php if(!empty($showresultaten)) {?>
+          <?php foreach ($showresultaten as $showresultaat): ?>
+          <div class="showresult">
+            <p class="showresult__titel"><?PHP echo $showresultaat['titel'];?></p>
+            <p class="showresult__uitleg"><?PHP echo $showresultaat['uitleg'];?></p>
+            <button class="button"><a href="<?PHP echo $showresultaat['url'];?>" target="_blank">Meer info</a></button>
+          </div>
+          <?php endforeach?>
+
+        <?php } else { ?>
+          <p>Geen showresultaten te vinden voor <?PHP echo $alpaca[0]['naam'];?>.</p>
+        <?php } ?>
       </article>
       <article class="alpaca__artikel__images">
         <h2 class="hidden">Alpaca Images</h2>

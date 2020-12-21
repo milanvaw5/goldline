@@ -53,6 +53,14 @@ class ProjectDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
+  public function selectAllTeKoopMerries(){
+
+    $sql = "SELECT * FROM `goldline_alpacas` WHERE `gender` = 1 AND `tekoop`= 1 ORDER BY `geboortedatum`  ASC";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
   public function selectAllDekhengsten(){
 
     $sql = "SELECT * FROM `goldline_alpacas` WHERE `gender` = 0 ORDER BY `geboortedatum`  ASC";
@@ -61,8 +69,24 @@ class ProjectDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
+  public function selectAllTeKoopDekhengsten(){
+
+    $sql = "SELECT * FROM `goldline_alpacas` WHERE `gender` = 0 AND `tekoop`= 1 ORDER BY `geboortedatum`  ASC";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
   public function selectAllFotosFromAlpaca($id){
     $sql = "SELECT * FROM `goldline_alpacafotos` WHERE `goldline_alpacafotos`.`idalpaca` = :id ;";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id',$id);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
+  public function selectAllShowresultatenFromAlpaca($id){
+    $sql = "SELECT * FROM `goldline_showresultaten` WHERE `goldline_showresultaten`.`idalpaca` = :id ;";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':id',$id);
     $stmt->execute();

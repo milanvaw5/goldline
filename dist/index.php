@@ -4,9 +4,13 @@ ini_set('display_errors', true);
 error_reporting(E_ALL);
 
 $routes = array(
-  'home' => array(
+  'index' => array(
     'controller' => 'Alpacas',
     'action' => 'index'
+  ),
+  'home' => array(
+    'controller' => 'Alpacas',
+    'action' => 'home'
   ),
   'addproject' => array(
     'controller' => 'Alpacas',
@@ -15,6 +19,38 @@ $routes = array(
   'detail' => array(
     'controller' => 'Alpacas',
     'action' => 'detail'
+  ),
+  'merries' => array(
+    'controller' => 'Alpacas',
+    'action' => 'merries'
+  ),
+  'dekhengsten' => array(
+    'controller' => 'Alpacas',
+    'action' => 'dekhengsten'
+  ),
+  'dealpaca' => array(
+    'controller' => 'Alpacas',
+    'action' => 'dealpaca'
+  ),
+  'tekoop' => array(
+    'controller' => 'Alpacas',
+    'action' => 'tekoop'
+  ),
+  'showresultaten' => array(
+    'controller' => 'Alpacas',
+    'action' => 'showresultaten'
+  ),
+  'gallerij' => array(
+    'controller' => 'Alpacas',
+    'action' => 'gallerij'
+  ),
+  'contact' => array(
+    'controller' => 'Alpacas',
+    'action' => 'contact'
+  ),
+  'showresultaten' => array(
+    'controller' => 'Alpacas',
+    'action' => 'showresultaten'
   )
 );
 

@@ -22,19 +22,25 @@ require('./style.css');
     document.querySelector(".vkbtn3").addEventListener("click", getDiversenTekst);
 
     function getMerriesTekst() {
-      document.querySelector(".tekoop__uitleg").innerHTML = "Momenteel hebben we geen merries te koop.";
-      document.querySelector(".productslist").style.display = 'none';
+      document.querySelector(".tekoop__uitleg").innerHTML = "Onze merries.";
+      document.getElementById("dekhengsten").style.display = 'none';
+      document.getElementById("diversen").style.display = 'none';
+      document.getElementById("merries").style.display = 'block';
     }
 
     function getDekhengstenTekst() {
-      document.querySelector(".tekoop__uitleg").innerHTML = "Momenteel hebben we geen hengsten te koop.";
-      document.querySelector(".productslist").style.display = 'none';
+      document.querySelector(".tekoop__uitleg").innerHTML = "Onze dekhengsten.";
+      document.getElementById("merries").style.display = 'none';
+      document.getElementById("diversen").style.display = 'none';
+      document.getElementById("dekhengsten").style.display = 'block';
     }
 
     function getDiversenTekst() {
       document.querySelector(".tekoop__uitleg").innerHTML = `Hieronder bieden we voeders aan die m’n ouders (eigenaars van Top-Line Alpaca’s)
       hebben samengesteld speciaal voor alpaca’s. Ook onze wol hebben we laten verwerken en kan je kopen bij de Kiekeboe winkel in Oudenaarde.`;
-      document.querySelector(".productslist").style.display = 'block';
+      document.getElementById("diversen").style.display = 'block';
+      document.getElementById("dekhengsten").style.display = 'none';
+      document.getElementById("merries").style.display = 'none';
     }
   }
 

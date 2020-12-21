@@ -56,6 +56,18 @@
   gap: 2rem;
 }
 
+.showresult {
+  width: 60rem;
+  margin: 1rem;
+  border: .1rem solid var(--background);
+  padding: 3rem 2rem 0;
+}
+
+.showresult__titel {
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
 /*
 @media only screen and (max-width: 600px) {
 
