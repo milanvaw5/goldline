@@ -18,8 +18,13 @@
         }
       ?>
       <header><h1 class="hidden">Goldline Alpaca's</h1>
-      <nav class="navbar">
-          <ul class="navbar__items">
+      <nav class="navbar" role="navigation">
+      <div class="menuToggle">
+      <input class="checkbox" type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+          <ul class="navbar__items menu">
             <li class="items__item"><a class="active" href="index.php?page=home"><img class="logo" src="assets/img/logo.png" alt="Logo"></a></li>
             <li class="items__item"><a href="index.php?page=merries">Merries</a></li>
             <li class="items__item"><a href="index.php?page=dekhengsten">Dekhengsten</a></li>

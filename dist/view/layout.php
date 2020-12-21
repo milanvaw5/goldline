@@ -40,10 +40,10 @@
           <img class="footer__logo" src="assets/img/logo.png" alt="Logo">
         </div>
         <div class="footer__element">
-          <p class="footer__tekst">Adres: Bosstraat 49, 9780 Ethikove</p>
+          <p class="footer__tekst"><strong>Adres:</strong> Bosstraat 49, 9780 Ethikove</p>
         </div>
         <div class="footer__element">
-          <p class="footer__tekst">E-mailadres: ymkebaert@hotmail.com</p>
+          <p class="footer__tekst"><strong>E-mailadres:</strong>  gold-line-alpacas@hotmail.com</p>
         </div>
       </footer>
     <?php echo $js; ?>

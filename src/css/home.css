@@ -1,6 +1,7 @@
 .home__grid {
   display: grid;
   grid-template-columns: 1fr;
+  width: 100%;
 }
 
 .home__section {
@@ -13,6 +14,7 @@
   grid-template-columns: 1fr 1fr;
   min-height: 25rem;
   margin-bottom: -.6rem;
+  max-width: 100%;
 }
 
 .homeimg {
@@ -28,13 +30,14 @@
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-  margin: 5rem 12rem;
+  padding: 5rem 12rem;
   line-height: 2rem;
+  max-width: 100%;
 }
 
 .paginatitelgroot {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem;
 }
 
 /*------------------------------------------*/
@@ -54,7 +57,7 @@
 /*------------------------------------------*/
 
 .section__container__instagallery {
-  width: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-rows: 1fr;
   justify-content: center;
@@ -84,7 +87,6 @@
 }
 
 .home__plant {
-  left: -2%;
   position: absolute;
   z-index: -1;
 }
@@ -92,12 +94,12 @@
 .plantlinks {
   margin-top: -8rem;
   max-height: 30rem;
+  left: 0;
 }
 
 .plantrechts {
   max-height: 40rem;
   right: 0;
-  left: 88%;
   z-index: 1;
 }
 
@@ -123,15 +125,23 @@
 
   .firsthomeimg {
     display: none;
+    width: 1%;
   }
 
-  .firsthometextsection {
+  .homeimg {
+    width: 50vw;
+  }
+
+  .firsthometextsection, .dealpacatoptext {
     width: 100%;
+    padding: 3rem 0 3rem 5rem;
   }
 
   .headerpiece {
     background-color: var(--background);
     z-index: 1;
+    justify-items: center;
+    align-items: center;
   }
 
 }

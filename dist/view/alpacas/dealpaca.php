@@ -1,8 +1,10 @@
 <section class="home__grid">
       <article class="artikel headerpiece">
         <h2 class="hidden">De alpaca</h2>
-        <section><img class="homeimg" src="assets/img/dealpaca.jpg" alt="alpacas in de wei"></section>
-        <section class="textsection"><h3 class="paginatitelgroot">De alpaca</h3>
+        <section class="dealpacatopimg">
+          <img class="homeimg" src="assets/img/dealpaca.jpg" alt="alpacas in de wei">
+        </section>
+        <section class="textsection dealpacatoptext"><h3 class="paginatitelgroot">De alpaca</h3>
         <p>Op deze pagina vind je allerlei informatie terug van de alpaca, bijvoorbeeld waar komen ze vandaan, tot welke diersoort behoren ze, wat eten ze, hoe ga je met een alpaca om,…
 </p><p>Indien je zelf nog vragen hebt kan je ons gerust je vraag stellen.
         </p></section>
