@@ -43,7 +43,7 @@
           <p class="footer__tekst"><strong>Adres:</strong> Bosstraat 49, 9780 Ethikove</p>
         </div>
         <div class="footer__element">
-          <p class="footer__tekst"><strong>E-mailadres:</strong> ymkebaert@hotmail.com</p>
+          <p class="footer__tekst"><strong>E-mailadres:</strong>  gold-line-alpacas@hotmail.com</p>
         </div>
       </footer>
     <?php echo $js; ?>
