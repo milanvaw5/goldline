@@ -26,7 +26,7 @@ body {
   width: 100%;
   font-size: 1.6rem;
   color: var(--darkgrey);
-  line-height: normal;
+  line-height: 1.5;
 }
 
 main {
@@ -63,9 +63,8 @@ main {
 /*------------------------------------------*/
 
 .logo {
-  max-width: 13rem;
-  margin: -1.7rem;
-  padding-right: 2rem;
+  max-width: 10rem;
+  margin-left: 1rem;
 }
 
 .instaicon {
@@ -98,6 +97,28 @@ main {
 
 .paginatitel {
   margin-bottom: 1rem;
+}
+
+.desktop {
+  background-color: var(--darkgrey);
+  padding: 1rem 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.first {
+  padding-left: -28rem;
+}
+
+.middle {
+  padding-left: 24rem;
 }
 
 .startbtn a {
@@ -221,7 +242,6 @@ main {
   .logo {
     max-width: 8rem;
     margin: -1.7rem;
-    padding-right: 2rem;
   }
 
   .instaicon {
@@ -289,7 +309,7 @@ main {
     text-decoration: none;
   }
 
-  .checkbox {
+  .checkbox, .mobile {
     display: none;
   }
 
@@ -326,92 +346,6 @@ main {
     justify-items: center;
     padding: 1rem;
     margin: 0;
-  }
-
-  .menuToggle {
-    display: block;
-    position: relative;
-    top: .1rem;
-    left: .1rem;
-    z-index: 3;
-    user-select: none;
-  }
-
-  .menuToggle a {
-    text-decoration: none;
-    color: white;
-    transition: color .3s ease;
-  }
-
-  .menuToggle input {
-    display: block;
-    width: 4rem;
-    height: 3.2rem;
-    position: absolute;
-    top: -.7rem;
-    left: -.5rem;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 3;
-    -webkit-touch-callout: none;
-  }
-
-  .menuToggle span {
-    display: block;
-    width: 3.3rem;
-    height: .4rem;
-    margin-bottom: .5rem;
-    position: relative;
-    background: white;
-    border-radius: .3rem;
-    z-index: 1;
-    transform-origin: .4rem 0;
-    transition: transform .5s;
-  }
-
-  .menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
-
-  .menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-
-  .menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-  }
-
-  .menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(.2, .2);
-  }
-
-  .menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-
-  .menu {
-    position: absolute;
-    width: 30rem;
-    padding-top: 2.5rem;
-    background: white;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    display: none;
-    transition: .5s;
-    z-index: 1;
-    background-color: var(--darkgrey);
-  }
-
-  .menu li {
-    padding: .1rem 0;
-    font-size: 2.2rem;
-  }
-
-  .menuToggle input:checked ~ ul {
-    display: block;
   }
 
   .litems__itemi a:hover {
@@ -528,5 +462,112 @@ main {
 
   .gegevensuitleg {
     max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    min-width: 100%;
+    background-color: var(--darkgrey);
+    min-height: 4rem;
+    padding: 1rem;
+  }
+
+  .middle {
+    padding-left: 16rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .menuToggle {
+    display: block;
+    position: relative;
+    top: .1rem;
+    left: .1rem;
+    z-index: 3;
+    user-select: none;
+  }
+
+  .menuToggle a {
+    text-decoration: none;
+    color: white;
+    transition: color .3s ease;
+  }
+
+  .menuToggle input {
+    display: block;
+    width: 4rem;
+    height: 3.2rem;
+    position: absolute;
+    top: -.7rem;
+    left: -.5rem;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+    -webkit-touch-callout: none;
+  }
+
+  .menuToggle span {
+    display: block;
+    width: 3.3rem;
+    height: .4rem;
+    margin-bottom: .5rem;
+    position: relative;
+    background: white;
+    border-radius: .3rem;
+    z-index: 1;
+    transform-origin: .4rem 0;
+    transition: transform .5s;
+  }
+
+  .menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  .menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
+
+  .menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(.2, .2);
+  }
+
+  .menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  .menu {
+    position: absolute;
+    width: 30rem;
+    padding-top: 2.5rem;
+    background: white;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    display: none;
+    transition: .5s;
+    z-index: 1;
+    background-color: var(--darkgrey);
+  }
+
+  .menu li {
+    padding: .1rem 0;
+    font-size: 2.2rem;
+  }
+
+  .menuToggle input:checked ~ ul {
+    display: block;
   }
 }

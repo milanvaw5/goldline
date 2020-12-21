@@ -25,12 +25,13 @@
         <span></span>
         <span></span>
           <ul class="navbar__items menu">
-            <li class="items__item"><a class="active" href="index.php?page=home"><img class="logo" src="assets/img/logo.png" alt="Logo"></a></li>
-            <li class="items__item"><a href="index.php?page=merries">Merries</a></li>
+            <li class="items__item mobile"><a href="index.php?page=home"><img class="logo" src="assets/img/logo.png" alt="Logo"></a></li>
+            <li class="items__item first"><a href="index.php?page=merries">Merries</a></li>
             <li class="items__item"><a href="index.php?page=dekhengsten">Dekhengsten</a></li>
             <li class="items__item"><a href="index.php?page=tekoop">Te koop</a></li>
             <li class="items__item"><a href="index.php?page=dealpaca">De alpaca</a></li>
-            <li class="items__item"><a href="index.php?page=showresultaten">Showresultaten</a></li>
+            <li class="items__item desktop"><a href="index.php?page=home"><img class="logo" src="assets/img/logo.png" alt="Logo"></a></li>
+            <li class="items__item middle"><a href="index.php?page=showresultaten">Showresultaten</a></li>
             <li class="items__item"><a href="index.php?page=gallerij">Gallerij</a></li>
             <li class="items__item"><a href="index.php?page=contact">Contact</a></li>
             <li class="items__item"><a href="https://www.instagram.com/goldlinealpacas/" target="_blank"><img class="instaicon" src="assets/img/instaicon.png" alt="Instagram"></a></li>
