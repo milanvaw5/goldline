@@ -321,6 +321,16 @@ main {
     padding: 1rem;
   }
 
+  .showresult {
+    width: 90%;
+  }
+
+  .detail__profile__pic {
+    width: 15rem;
+    height: 15rem;
+    margin: -1rem;
+  }
+
   .plantlinks {
     margin-top: -2rem;
     max-height: 20rem;
@@ -466,6 +476,10 @@ main {
 }
 
 @media only screen and (max-width: 1000px) {
+
+  .detailtop {
+    border: none;
+  }
 
   .navbar {
     display: flex;

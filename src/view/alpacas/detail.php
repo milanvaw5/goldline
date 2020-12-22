@@ -10,7 +10,7 @@
           <p class="detail__profile__naam"><?PHP echo $alpaca[0]['naam'];?></p>
         </section>
         <section class="detail__textsection"><h3 class="paginatitelgroot hidden">Dekhengst <?PHP echo $alpaca[0]['naam'];?></h3>
-          <p><?php
+          <p class="detail__gender"><?php
           if ($alpaca[0]['gender'] === 0)
           {
             echo "hengst";
@@ -19,7 +19,7 @@
           };?></p>
           <p><?PHP echo $alpaca[0]['geboortedatum'];?></p>
           <p><?PHP echo $alpaca[0]['beschrijving'];?></p>
-          <button class="button"><a href="index.php?page=showresultaten">Ontdek de stamboom</a></button>
+          <button class="button"><a href="<?PHP echo $alpaca[0]['stamboom'];?>">Ontdek de stamboom</a></button>
           <button class="button"><a href="index.php?page=contact">Contacteer voor interesse</a></button>
         </section>
       </article>
