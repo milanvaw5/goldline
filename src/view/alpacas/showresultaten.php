@@ -1,4 +1,4 @@
-<section class="home__grid">
+<section class="home__grid showresulttop">
       <article class="artikel headerpiece">
         <h2 class="hidden">Showresultaten pagina</h2>
         <section class="dealpacatopimg">
