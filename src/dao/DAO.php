@@ -11,10 +11,10 @@ class DAO {
 
 		if(empty(self::$sharedPDO)) {
 
-      $dbHost = getenv('PHP_DB_HOST') ?: "localhost:8889";
-      $dbName = getenv('PHP_DB_DATABASE') ?: "goldline";
-      $dbUser = getenv('PHP_DB_USERNAME') ?: "goldline";
-      $dbPass = getenv('PHP_DB_PASSWORD') ?: "goldline";
+      $dbHost = getenv('PHP_DB_HOST') ?: "gold-line-alpacas.com.mysql";
+      $dbName = getenv('PHP_DB_DATABASE') ?: "gold_line_alpacas_commaindb";
+      $dbUser = getenv('PHP_DB_USERNAME') ?: "gold_line_alpacas_commaindb";
+      $dbPass = getenv('PHP_DB_PASSWORD') ?: "Julke101";
 
 			self::$sharedPDO = new PDO("mysql:host=" . $dbHost . ";dbname=" . $dbName, $dbUser, $dbPass);
 			self::$sharedPDO->exec("SET CHARACTER SET utf8");

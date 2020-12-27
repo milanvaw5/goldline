@@ -1,7 +1,7 @@
 <section class="home__grid">
-      <article class="artikel headerpiece">
+      <article class="tophome">
         <h2 class="hidden">Home pagina</h2>
-        <section class="firsthomeimg">
+        <section class="hidden">
           <img class="homeimg" src="assets/img/home.jpg" alt="alpacas in de wei">
         </section>
         <section class="textsection firsthometextsection hometop">

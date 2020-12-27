@@ -46,7 +46,7 @@
           <img class="footer__logo" src="assets/img/logo.png" alt="Logo">
         </div>
         <div class="footer__element">
-          <p class="footer__tekst"><strong>Adres:</strong> Bosstraat 49, 9780 Ethikove</p>
+          <p class="footer__tekst"><strong>Adres:</strong> Driesstraat 8, 9690 Kluisbergen</p>
         </div>
         <div class="footer__element">
           <p class="footer__tekst"><strong>E-mailadres:</strong>  gold-line-alpacas@hotmail.com</p>

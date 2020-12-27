@@ -205,7 +205,7 @@ main {
   align-content: center;
   width: 100%;
   min-height: 20rem;
-  margin: 10rem 0 0;
+  margin: 3rem 0 0;
   padding: 0 30rem;
 }
 
@@ -276,6 +276,18 @@ main {
 /*----------------------------------------
 -------------------------------------------*/
 
+@media only screen and (min-width: 1050px) {
+
+  .checkbox, .mobile {
+    display: none;
+  }
+
+  .footer__elements {
+    margin: 10rem 0 0;
+  }
+
+}
+
 @media only screen and (min-width: 700px) {
 
   .navbar {
@@ -309,13 +321,13 @@ main {
     text-decoration: none;
   }
 
-  .checkbox, .mobile {
-    display: none;
-  }
-
 }
 
 @media only screen and (max-width: 700px) {
+
+  .footer__elements {
+    display: none;
+  }
 
   p {
     padding: 1rem;
@@ -475,7 +487,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
 
   .detailtop {
     border: none;

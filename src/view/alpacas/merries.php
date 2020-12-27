@@ -1,7 +1,7 @@
 <section class="home__grid show">
       <article class="artikel headerpiece">
         <h2 class="hidden">Home pagina</h2>
-        <section><img class="homeimg" src="assets/img/merries.jpg" alt="alpacas in de wei"></section>
+        <section class="dekhengstentopimg"><img class="homeimg" src="assets/img/merries.jpg" alt="alpacas in de wei"></section>
         <section class="textsection"><h3 class="paginatitelgroot">Merries</h3><button class="button"><a href="index.php?page=contact">Contacteer voor interesse</a></button></section>
       </article>
 </section>
